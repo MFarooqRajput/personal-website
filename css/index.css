@@ -1,0 +1,176 @@
+/* ==========================================================================
+   Home Page Hero Section
+   ========================================================================== */
+
+/* Main hero section container */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 2rem 2rem;
+  background: #fff;
+}
+
+/* Hero content container */
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Profile image container */
+.profile-image {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 2rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #fff;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/* Profile image styling */
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Hero title with gradient effect */
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(45deg, #007bff, #00bcd4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Hero subtitle */
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+/* Hero description text */
+.hero-text {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* ==========================================================================
+   Professional Profiles Section
+   ========================================================================== */
+
+/* Profiles container */
+.professional-profiles {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Individual profile card */
+.profile-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 280px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile card hover effect */
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile card icons */
+.profile-card i {
+  font-size: 2rem;
+}
+
+/* LinkedIn icon color */
+.profile-card.linkedin i {
+  color: #0077b5;
+}
+
+/* GitHub icon color */
+.profile-card.github i {
+  color: #333;
+}
+
+/* Profile info heading */
+.profile-info h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+  color: #333;
+}
+
+/* Profile info text */
+.profile-info p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+/* Profile link styling */
+.profile-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Profile link hover effect */
+.profile-link:hover {
+  color: #0056b3;
+}
+
+/* ==========================================================================
+   Responsive Design
+   ========================================================================== */
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  /* Adjust hero title size */
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  /* Adjust hero subtitle size */
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  /* Adjust profile image size */
+  .profile-image {
+    width: 150px;
+    height: 150px;
+  }
+  
+  /* Stack profile cards vertically */
+  .professional-profiles {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Adjust profile card width */
+  .profile-card {
+    width: 100%;
+    max-width: 300px;
+  }
+} 

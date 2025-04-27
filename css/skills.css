@@ -1,0 +1,120 @@
+/* ==========================================================================
+   Skills Page Layout
+   ========================================================================== */
+
+/* Main skills section container */
+.skills-section {
+  padding: 8rem 2rem 4rem;
+  min-height: 100vh;
+  background: #fff;
+}
+
+/* Section title with gradient effect */
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  background: linear-gradient(45deg, #007bff, #00bcd4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ==========================================================================
+   Skill Categories
+   ========================================================================== */
+
+/* Individual skill category card */
+.skill-category {
+  background: #fff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Skill category hover effect */
+.skill-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Skill category header */
+.skill-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Skill category icon */
+.skill-header i {
+  font-size: 1.75rem;
+  color: #007bff;
+}
+
+/* Skill category title */
+.skill-header h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0;
+}
+
+/* ==========================================================================
+   Technology Stack
+   ========================================================================== */
+
+/* Technology stack container */
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Technology stack icons */
+.tech-stack img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+/* Technology stack icon hover effect */
+.tech-stack img:hover {
+  transform: scale(1.1);
+}
+
+/* ==========================================================================
+   Responsive Design
+   ========================================================================== */
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  /* Adjust section padding */
+  .skills-section {
+    padding: 6rem 1rem 2rem;
+  }
+  
+  /* Adjust section title size */
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  /* Adjust skill category padding */
+  .skill-category {
+    padding: 1.5rem;
+  }
+  
+  /* Center tech stack icons */
+  .tech-stack {
+    justify-content: center;
+  }
+  
+  /* Adjust tech stack icon size */
+  .tech-stack img {
+    width: 40px;
+    height: 40px;
+  }
+} 
